@@ -1,0 +1,6 @@
+avtonom_geocoder_ip:
+    type: rest
+    pattern:  /geocode/{_format}/{ip}
+    requirements:
+        _method: GET
+    defaults: { _controller: AvtonomGeocoderBundle:Api:getGeocode, _format: json, ip: null }

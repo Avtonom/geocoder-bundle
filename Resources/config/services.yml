@@ -1,0 +1,11 @@
+services:
+
+    avtonom_geocoder.geocoder.sypex_geo:
+        class: Avtonom\GeocoderBundle\Provider\SypexGeo
+        arguments: ["@yamilovs.sypex_geo.manager"]
+        tag: [bazinga_geocoder.provider]
+
+#    bazinga_geocoder.dumper.geoarray:
+#        class: \Geocoder\Dumper\GeoArray
+#        tag:
+#            - { name: bazinga_geocoder.dumper, alias: geoarray }
